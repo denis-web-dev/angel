@@ -19,7 +19,7 @@
   - jQuery Mask Plugin (маска телефона).
   - Google reCAPTCHA v3 (защита формы).
 - **Шрифты**: GT Eesti Pro, GolosText-Medium, Kyiv Type Sans.
-- **Зависимости**: Нет npm/yarn, но требуется подключить jQuery и mask plugin (если не в проекте).
+
 
 ## Структура проекта
 ├── index.html          # Основной HTML-файл
