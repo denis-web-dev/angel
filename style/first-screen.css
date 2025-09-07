@@ -1,0 +1,49 @@
+.first-screen__title {
+	font-family: var(--font-family-GTEestiPro);
+	font-weight: 400;
+
+  font-size: var(--firstTitle);
+
+	line-height: 0.94;
+	letter-spacing: -0.04em;
+	margin-top: 20px;
+	margin-bottom: 24px;
+	max-width: 850px;
+}
+.first-screen__description {
+	font-size: var(--firstDescr);
+	line-height: 1.4;
+	letter-spacing: -0.01em;
+	max-width: 456px;
+	margin-bottom: 32px;
+}
+.first-screen__btn {
+	position: relative;
+	padding: 23px 62px 23px 30px;
+
+	font-weight: 500;
+	font-size: var(--btnText);
+	line-height: 1.24;
+	letter-spacing: -0.01em;
+	text-transform: uppercase;
+
+	border-radius: 999px;
+	background: linear-gradient(180deg, #d4b26f -66.86%, #a87c25 180.08%);
+	color: #fff;
+	margin-bottom: 86px;
+}
+.first-screen__btn::before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 15px;
+	right: 18px;
+	background-image: url(../images/icons/arrow-primary-hover.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.first-screen__btn::before:hover {
+	background-image: url(../images/icons/arrow-primary.svg);
+}

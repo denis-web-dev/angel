@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'GT Eesti Pro';
+	src: local('GT Eesti Pro Regular'), local('GT Eesti Pro-Regular'),
+		url(../fonts/GTEestiProDisplay-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'GolosText-Medium';
+	src: local('GolosText-Medium'), local('GolosText-Medium'),
+		url(../fonts/GolosText-Medium.woff2) format('woff2') url(../fonts/GolosText-Medium.woff) format('woff');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Kyiv Type Sans-Regular';
+	src: url(../fonts/KyivTypeSans-Regular.woff2) format('woff2') url(../fonts/KyivTypeSans-Regular.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Kyiv Type Sans-Medium';
+	src: url(../fonts/KyivTypeSans-Medium.woff2) format('woff2') url(../fonts/KyivTypeSans-Medium.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Kyiv Type Sans-Bold';
+	src: url(../fonts/KyivTypeSans-Bold.woff2) format('woff2') url(../fonts/KyivTypeSans-Bold.woff2) format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

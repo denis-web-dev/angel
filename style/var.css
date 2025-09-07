@@ -1,0 +1,27 @@
+:root {
+	/* контейнер */
+	--container-width: 1360px;
+	--container-padding: 16px;
+
+	/* шрифт текста */
+	--font-family-GTEestiPro: 'GT Eesti Pro', sans-serif;
+	--font-family-KyivTypeSans: 'Kyiv Type Sans', sans-serif;
+	--font-family-GolosTextMedium: 'GolosText-Medium', sans-serif;
+
+	/* цвет текста */
+	--colorText-white: #fff;
+	--colorText-black: #000;
+
+	/* состояние кнопок */
+	--colorBtn-text-default: #fff;
+	--colorBtn-text-hover: #000;
+
+	--colorBtnBg-default: linear-gradient(180deg, #d4b26f -66.86%, #a87c25 180.08%);
+	--colorBtnBg-hover: #fff;
+
+	/* Размер шрифта */
+	--cardText: clamp(12px, calc(12px + (12 - 12) * (100vw - 320px) / (1440 - 320)), 12px);
+	--btnText: clamp(12px, calc(12px + (14 - 12) * (100vw - 320px) / (1440 - 320)), 14px);
+	--firstTitle: clamp(16px, calc(16px + (60 - 16) * (100vw - 320px) / (1440 - 320)), 60px);
+	--firstDescr: clamp(12px, calc(12px + (20 - 12) * (100vw - 320px) / (1440 - 320)), 20px);
+}

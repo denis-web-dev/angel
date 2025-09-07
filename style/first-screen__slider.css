@@ -1,0 +1,216 @@
+.fullscreen-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	z-index: -1;
+	transition: background 0.8s ease;
+	display: flex;
+	align-items: center;
+	justify-content: normal;
+	text-align: center;
+	padding: 2rem;
+	white-space: nowrap;
+	padding-left: 100px;
+}
+.fullscreen-background:after {
+	content: '';
+	background: linear-gradient(2deg, black -21%, transparent);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.slider-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	z-index: 10;
+}
+.card-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card-track {
+	display: flex;
+	gap: 1rem;
+	overflow-x: hidden;
+	max-width: 80vw;
+	transition: transform 0.5s ease;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	padding: 4px;
+
+	width: 144px;
+	height: 138px;
+
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	animation: fadeUp 0.8s ease forwards;
+
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(9.2px);
+	-webkit-backdrop-filter: blur(9.2px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	will-change: transform, opacity;
+}
+
+.card img {
+	display: none;
+}
+
+.card-text {
+	font-family: var(--font-family-KyivTypeSans);
+	font-weight: 100;
+	font-size: var(--cardText);
+	line-height: 1.24;
+	letter-spacing: -0.01em;
+	text-align: left;
+	padding-left: 24px;
+	margin-top: 34px;
+}
+
+.card:hover,
+.card.active {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-start;
+	width: 260px;
+	background: #ffffff;
+	z-index: 2;
+	transition: all 0.4s ease;
+}
+
+.card:hover .card-text,
+.card.active .card-text {
+	width: 100px;
+	text-align: left;
+	margin-top: 34px;
+	padding-left: 0px;
+	color: #1b1b1b;
+}
+
+.card:hover img,
+.card.active img {
+	display: block;
+	width: 50%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 17px;
+}
+.card-number {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+
+	font-family: var(--font-family-KyivTypeSans);
+	font-size: 15px;
+
+	left: 24px;
+	top: 20px;
+
+	width: 32px;
+	height: 32px;
+
+	background: rgba(255, 255, 255, 0.11999999731779099);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 90px;
+}
+.card:hover .card-number,
+.card.active .card-number {
+	color: #1b1b1b;
+	background: #ffffff;
+	border: 1px solid rgba(213, 175, 98, 0.6);
+}
+
+.nav-btn {
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: transform 0.2s ease;
+}
+
+.nav-btn:hover {
+	transform: scale(1.2);
+}
+
+.card-scrollbar {
+	width: 144px;
+	height: 5px;
+	background: #333;
+	display: flex;
+	align-items: center;
+	transition: width 0.4s ease;
+	margin-top: 16px;
+	/* Отступ сверху для размещения под карточкой */
+}
+
+.card.active + .card-scrollbar,
+.card:hover + .card-scrollbar {
+	width: 260px;
+}
+
+.card-scrollbar-line {
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1);
+	background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+	background-size: 0% 100%;
+	border-radius: 32px;
+	backdrop-filter: blur(9.2px);
+	-webkit-backdrop-filter: blur(9.2px);
+	position: relative;
+	overflow: hidden;
+}
+
+.card-scrollbar-fill {
+	height: 100%;
+	background: #ffffff; /* Цвет заполнения */
+	width: 0%; /* Начальная ширина 0% */
+	transition: width 0s; /* Без перехода на старте */
+}
+
+.card.active + .card-scrollbar .card-scrollbar-line .card-scrollbar-fill {
+	animation: fillProgress 3s linear infinite; /* Анимация заполнения за 3 секунды */
+}
+
+@keyframes fillProgress {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

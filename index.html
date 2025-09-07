@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel</title>
+  <meta name="description"
+    content="Ангел Concept — премиальный салон красоты в Ставрополе: косметология, SPA, велнесс.">
+  <meta name="keywords" content="салон красоты, Ставрополь, косметология, SPA">
+  <link rel="preload" href="../fonts/GTEestiProDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+  <div class="fullscreen-background" id="fullscreen-bg"></div>
+  <header class="header">
+    <div class="header__container container">
+      <nav class="nav__top">
+
+        <div class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+          <span class="line1"></span>
+          <span class="line2"></span>
+        </div>
+
+        <div class="nav__top--right">
+          <div class="nav__rating">
+            <img class="nav__rating--img" src="./images/icons/yandex.png" alt="Рейтинг яндекс">
+            <div class="nav__rating--text">
+              <p class="nav__rating--star">Рейтинг 4.9</p>
+              <p class="nav__rating--descr">135 отзывов</p>
+            </div>
+          </div>
+          <p class="nav__top--description">Салон красоты премиального уровня в Ставрополе</p>
+        </div>
+        <img class="logo" src="./images/icons/logo.png" alt="Логотип Ангел">
+        <div class="nav__top--left">
+          <div class="nav__social">
+            <div class="nav__social--whatsapp">
+              <a class="social__link--whatsapp" href="#">
+                <svg class="svg-whatsapp" width="18" height="18" viewBox="0 0 18 18" fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.9993 4.17135C13.5368 0.308466 8.50917 -0.83996 4.61021 1.5613C0.813858 3.96255 -0.417392 9.18267 2.04511 13.0456L2.25032 13.3588L1.42948 16.4908L4.50761 15.6556L4.81542 15.8644C6.14928 16.5952 7.58574 17.0128 9.0222 17.0128C10.5613 17.0128 12.1003 16.5952 13.4342 15.76C17.2305 13.2544 18.3592 8.13865 15.9993 4.17135ZM13.8446 12.2103C13.4342 12.8368 12.9212 13.2544 12.2029 13.3588C11.7925 13.3588 11.2795 13.5676 9.2274 12.7324C7.48313 11.8971 6.04667 10.5399 5.02063 8.97387C4.40501 8.24305 4.09719 7.30343 3.99459 6.36381C3.99459 5.52859 4.3024 4.79777 4.81542 4.27576C5.02063 4.06695 5.22584 3.96255 5.43105 3.96255H5.94407C6.14928 3.96255 6.35449 3.96255 6.45709 4.38016C6.6623 4.90217 7.17532 6.155 7.17532 6.2594C7.27792 6.36381 7.27792 6.57261 7.17532 6.67701C7.27792 6.88582 7.17532 7.09462 7.07272 7.19903C6.97011 7.30343 6.86751 7.51223 6.7649 7.61663C6.55969 7.72104 6.45709 7.92984 6.55969 8.13865C6.97011 8.76506 7.48313 9.39147 7.99615 9.91349C8.61178 10.4355 9.2274 10.8531 9.94563 11.1663C10.1508 11.2707 10.3561 11.2707 10.4587 11.0619C10.5613 10.8531 11.0743 10.3311 11.2795 10.1223C11.4847 9.91349 11.5873 9.91349 11.7925 10.0179L13.4342 10.8531C13.6394 10.9575 13.8446 11.0619 13.9472 11.1663C14.0498 11.4795 14.0498 11.8971 13.8446 12.2103Z" />
+                </svg>
+              </a>
+            </div>
+            <div class="nav__social--telegram">
+              <a class="social__link--telegram" href="#">
+                <svg class="svg-telegram" width="18" height="15" viewBox="0 0 18 15" fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.7873 1.57286L15.0954 13.8721C14.8923 14.7401 14.3627 14.9561 13.6101 14.5472L9.50853 11.619L7.52943 13.4631C7.31041 13.6753 7.12724 13.8528 6.70513 13.8528L6.99981 9.80576L14.6016 3.15077C14.9321 2.86528 14.5299 2.70711 14.0879 2.9926L4.6902 8.72553L0.644388 7.4987C-0.235655 7.2325 -0.251583 6.64609 0.827564 6.23714L16.6524 0.3306C17.3851 0.0644008 18.0262 0.488777 17.7873 1.57286Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="nav__contact">
+            <a class="nav__contact--tel" href="tel:+79100044636">+7 910 004-46-36</a>
+            <p class="nav__contact--text">Пн–ВС, с 10:00–22:00</p>
+          </div>
+          <button class="nav__btn--record">Запись на приём</button>
+        </div>
+      </nav>
+
+      <nav class="nav__menu" id="nav-menu" role="navigation">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link menu__link--arrow" href="!#">все услуги</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">О центре</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">косметология</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">SPA & Thai</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">велнесс-терапия</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">SPA & Релакс</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">коррекция фигуры</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">Журнал</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">сертификаты</a></li>
+          <li class="menu__item"><a class="menu__link" href="!#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-first-screen">
+      <div class="section-first-screen__container container">
+        <h1 class="first-screen__title" aria-live="polite">Ангел Concept — <br>центр премиального ухода и косметологии в
+          Ставрополе</h1>
+        <p class="first-screen__description">Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+          профессионально и легко</p>
+        <button class="first-screen__btn">подробнее об услугах</button>
+        <div class="first-screen__slider">
+          <div class="slider-container">
+            <div class="card-track" id="card-track"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=your-site-key-here"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
