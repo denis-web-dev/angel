@@ -1,8 +1,8 @@
-@import url('style/style.css');
-@import url('style/var.css');
-@import url('style/fonts.css');
-@import url('style/header.css');
-@import url('style/nav-menu.css');
-@import url('style/first-screen.css');
-@import url('style/first-screen__slider.css');
-@import url('style/media.css');
+@import url('style.css');
+@import url('var.css');
+@import url('fonts.css');
+@import url('header.css');
+@import url('nav-menu.css');
+@import url('first-screen.css');
+@import url('first-screen__slider.css');
+@import url('media.css');
