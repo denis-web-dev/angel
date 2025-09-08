@@ -328,9 +328,16 @@
 	}
 }
 
-@media (min-width: 400px) and (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 420px) {
 	.card-track {
 		gap: 20px;
+	}
+	.card-scrollbar {
+		width: 36px;
+	}
+	.card.active + .card-scrollbar,
+	.card:hover + .card-scrollbar {
+		width: 36px;
 	}
 }
 
