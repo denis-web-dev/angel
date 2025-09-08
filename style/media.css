@@ -136,13 +136,7 @@
 	.nav__menu {
 		min-height: clamp(200px, calc(150px + 25vw), 300px);
 	}
-	/* .nav__menu.active {
-		display: block;
-	} */
-	/* .menu__list {
-		flex-direction: column;
-		gap: 12px;
-	} */
+
 	.menu__link {
 		font-size: 13px;
 	}
@@ -331,6 +325,12 @@
 	.card.active + .card-scrollbar,
 	.card:hover + .card-scrollbar {
 		width: 44px;
+	}
+}
+
+@media (max-width: 420px) {
+	.card-track {
+		gap: 24px;
 	}
 }
 
