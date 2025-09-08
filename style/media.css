@@ -328,9 +328,9 @@
 	}
 }
 
-@media (max-width: 420px) {
+@media (min-width: 400px) and (max-width: 420px) {
 	.card-track {
-		gap: 24px;
+		gap: 20px;
 	}
 }
 
