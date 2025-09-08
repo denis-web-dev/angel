@@ -163,7 +163,6 @@
 	align-items: center;
 	transition: width 0.4s ease;
 	margin-top: 16px;
-	/* Отступ сверху для размещения под карточкой */
 }
 
 .card.active + .card-scrollbar,
@@ -186,13 +185,13 @@
 
 .card-scrollbar-fill {
 	height: 100%;
-	background: #ffffff; /* Цвет заполнения */
-	width: 0%; /* Начальная ширина 0% */
-	transition: width 0s; /* Без перехода на старте */
+	background: #ffffff;
+	width: 0%;
+	transition: width 0s;
 }
 
 .card.active + .card-scrollbar .card-scrollbar-line .card-scrollbar-fill {
-	animation: fillProgress 3s linear infinite; /* Анимация заполнения за 3 секунды */
+	animation: fillProgress 3s linear infinite;
 }
 
 @keyframes fillProgress {

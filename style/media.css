@@ -96,31 +96,31 @@
 }
 @media (min-width: 320px) and (max-width: 768px) {
 	.nav__menu {
-		display: block; /* Изменено: всегда block, чтобы анимировать через transform/opacity */
-		position: absolute; /* Добавлено: абсолютное позиционирование для выезда */
-		top: 68%; /* Добавлено: меню начинается сразу под хедером */
+		display: block;
+		position: absolute;
+		top: 68%;
 		left: 0;
 		right: 0;
-		background: rgb(0, 0, 0); /* Добавлено: тёмный фон для мобильного меню */
-		transform: translateY(-100%); /* Добавлено: меню спрятано выше экрана */
-		opacity: 0; /* Добавлено: прозрачность в закрытом состоянии */
-		transition: transform 0.3s ease, opacity 0.3s ease; /* Добавлено: плавная анимация */
-		visibility: hidden; /* Добавлено: скрытие для предотвращения взаимодействия */
+		background: rgb(0, 0, 0);
+		transform: translateY(-100%);
+		opacity: 0;
+		transition: transform 0.3s ease, opacity 0.3s ease;
+		visibility: hidden;
 		will-change: transform, opacity;
 	}
 	.nav__menu.active {
-		transform: translateY(0); /* Добавлено: меню выезжает в видимую зону */
-		opacity: 1; /* Добавлено: полная видимость */
-		visibility: visible; /* Добавлено: доступно для взаимодействия */
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
 	}
 	.menu__list {
-		flex-direction: column; /* Вертикальное расположение пунктов */
+		flex-direction: column;
 		gap: 12px;
-		padding: 20px; /* Добавлено: отступы внутри меню */
+		padding: 20px;
 	}
 	.menu__link {
-		font-size: 16px; /* Изменено: увеличен шрифт для мобильного меню */
-		text-align: center; /* Добавлено: центрирование текста */
+		font-size: 16px;
+		text-align: center;
 	}
 }
 @media (max-width: 768px) {
